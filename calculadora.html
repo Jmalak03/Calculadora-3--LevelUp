@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calcu">
+        <form name="calculadora">
+            <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+
+            <input type="button" value="7" onclick="document.calculadora.ans.value+='7'" class="gray">
+            <input type="button" value="8" onclick="document.calculadora.ans.value+='8'" class="gray"> 
+            <input type="button" value="9" onclick="document.calculadora.ans.value+='9'" class="gray">
+            <input type="button" value="+" onclick="document.calculadora.ans.value+='+'"class="orange">
+            <br>
+
+            <input type="button" value="4" onclick="document.calculadora.ans.value+='4'" class="gray">
+            <input type="button" value="5" onclick="document.calculadora.ans.value+='5'"class="gray">
+            <input type="button" value="6" onclick="document.calculadora.ans.value+='6'" class="gray">
+            <input type="button" value="-" onclick="document.calculadora.ans.value+='-'"class="orange">
+            <br>
+            <input type="button" value="1" onclick="document.calculadora.ans.value+='1'" class="gray">
+            <input type="button" value="2" onclick="document.calculadora.ans.value+='2'" class="gray">
+            <input type="button" value="3" onclick="document.calculadora.ans.value+='3'" class="gray">
+            <input type="button" value="x" onclick="document.calculadora.ans.value+='x'" class="orange">
+<br>
+            <input type="button" value="0" onclick="document.calculadora.ans.value+='0'" class="gray">
+            <input type="reset" value="C">
+            <input type="button" value="=" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">
+            <input type="button" value="/" onclick="document.calculadora.ans.value+='/'" class="orange">
+        
+
+
+
+
+        </form>
+
+    </div>
+    
+</body>
+
+</html>
